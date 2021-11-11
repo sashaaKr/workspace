@@ -10,6 +10,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 # manually add zsh-autosuggestions, zsh-syntax-highlighting, git, nvm, aws to plugins
 
+brew install jq
+
 ### ranger install
 brew install ranger
 ranger --copy-config=all
@@ -26,6 +28,15 @@ echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
 # and select nerd font
 
 
+brew install ripgrep
+brew install fx
+brew install fpp
+brew install pueue
+brew install lazydocker
+brew install lazygit
+
+brew install bat
+echo 'alias cat="bat -P"' >> ~/.zshrc
 
 brew install fzf
 $(brew --prefix)/opt/fzf/install
@@ -49,3 +60,6 @@ disabled = false
 EOT
 
 brew install kubectx
+
+pip3 install yq
+
