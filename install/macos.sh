@@ -36,3 +36,13 @@ brew install awscli
 
 brew install kubectl 
 echo "source <(kubectl completion zsh)" >> ~/.zshrc
+
+cat <<EOT >> ~/.config/starship.toml
+[kubernetes]
+symbol = "⎈ "
+format = " [\$symbol\$context( \\\(\$namespace\\\))](\$style) "
+style = "bright-blue"
+disabled = false
+EOT
+
+brew install kubectx
