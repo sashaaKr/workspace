@@ -1,5 +1,12 @@
 #!/bin/bash
 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+# manually add zsh-autosuggestions, zsh-syntax-highlighting, git, nvm, aws to plugins
+
 ### ranger install
 brew install ranger
 ranger --copy-config=all
@@ -14,3 +21,18 @@ echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
 
 # In iterm: ITerm2 > Preferences > Profiles > Text > Change Font
 # and select nerd font
+
+
+
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+
+brew install gh	
+
+brew install starship
+echo "eval "$(starship init zsh)"" >> ~/.zshrc
+
+brew install awscli
+
+brew install kubectl 
+echo "source <(kubectl completion zsh)" >> ~/.zshrc
