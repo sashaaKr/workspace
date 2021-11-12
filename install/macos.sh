@@ -60,6 +60,7 @@ disabled = false
 EOT
 
 brew install kubectx
+brew install k9s
 
 pip3 install yq
 
