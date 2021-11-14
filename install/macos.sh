@@ -62,5 +62,7 @@ EOT
 brew install kubectx
 brew install k9s
 
+brew install pulumi
+
 pip3 install yq
 
