@@ -63,6 +63,8 @@ brew install kubectx
 brew install k9s
 
 brew install pulumi
+brew install dive
+
 
 pip3 install yq
 
