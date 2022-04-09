@@ -68,3 +68,7 @@ brew install dive
 
 pip3 install yq
 
+# https://github.com/dlvhdr/gh-dash
+gh extension install dlvhdr/gh-dash
+
+
