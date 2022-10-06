@@ -34,6 +34,7 @@ brew install fpp
 brew install pueue
 brew install lazydocker
 brew install lazygit
+brew install gitui
 brew install tmux
 
 brew install bat
