@@ -66,7 +66,7 @@ brew install k9s
 
 brew install pulumi
 brew install dive
-
+brew install redis
 
 pip3 install yq
 
