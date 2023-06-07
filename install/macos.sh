@@ -36,6 +36,7 @@ brew install lazydocker
 brew install lazygit
 brew install gitui
 brew install tmux
+brew install htop
 
 brew install bat
 echo 'alias cat="bat -P"' >> ~/.zshrc
