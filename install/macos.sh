@@ -37,8 +37,9 @@ brew install lazygit
 brew install gitui
 brew install tmux
 brew install htop
-brew install eza
 
+brew install eza
+echo 'alias ls="eza -ls"' >> ~/.zshrc
 
 brew install bat
 echo 'alias cat="bat -P"' >> ~/.zshrc
