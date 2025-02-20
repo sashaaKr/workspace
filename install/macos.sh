@@ -44,6 +44,10 @@ echo 'alias ls="eza -ls"' >> ~/.zshrc
 brew install bat
 echo 'alias cat="bat -P"' >> ~/.zshrc
 
+brew install colima
+echo 'alias start_colima="colima start -c 4 -m 8 -d 100"' >> ~/.zshrc
+
+
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 
