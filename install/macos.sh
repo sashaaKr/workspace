@@ -38,6 +38,7 @@ brew install gitui
 brew install tmux
 brew install htop
 
+
 brew install eza
 echo 'alias ls="eza -ls"' >> ~/.zshrc
 
@@ -47,6 +48,9 @@ echo 'alias cat="bat -P"' >> ~/.zshrc
 brew install colima
 echo 'alias start_colima="colima start -c 4 -m 8 -d 100"' >> ~/.zshrc
 
+
+brew install fnm
+echo '$(fnm env --use-on-cd --shell zsh)' >> ~/.zshrc
 
 brew install fzf
 $(brew --prefix)/opt/fzf/install
