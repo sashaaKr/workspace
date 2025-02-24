@@ -10,13 +10,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 # manually add zsh-autosuggestions, zsh-syntax-highlighting, git, nvm, aws to plugins
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 brew install jq
 
 ### ranger install
 brew install ranger
 ranger --copy-config=all
 
-brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
@@ -37,10 +38,10 @@ brew install lazygit
 brew install gitui
 brew install tmux
 brew install htop
-
+brew install yq
 
 brew install eza
-echo 'alias ls="eza -ls"' >> ~/.zshrc
+echo 'alias ls="eza -la"' >> ~/.zshrc
 
 brew install bat
 echo 'alias cat="bat -P"' >> ~/.zshrc
@@ -83,7 +84,6 @@ brew install pulumi
 brew install dive
 brew install redis
 
-pip3 install yq
 
 # https://github.com/dlvhdr/gh-dash
 gh extension install dlvhdr/gh-dash
