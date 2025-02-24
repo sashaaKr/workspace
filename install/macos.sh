@@ -5,6 +5,10 @@ git config --global user.name "Sasha Kruglyak"
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo "export LC_ALL=en_US.UTF-8" >> ~/.zshrc
+echo "export LANG=en_US.UTF-8" >> ~/.zshrc
+echo "export LANGUAGE=en_US.UTF-8" >> ~/.zshrc
+
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
