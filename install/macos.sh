@@ -43,6 +43,9 @@ brew install gitui
 brew install tmux
 brew install htop
 brew install yq
+brew install go
+brew install docker
+
 
 brew install eza
 echo 'alias ls="eza -la"' >> ~/.zshrc
