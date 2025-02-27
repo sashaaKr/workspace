@@ -33,6 +33,7 @@ echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
 # and select nerd font
 
 
+brew install iterm2
 brew install ripgrep
 brew install fx
 brew install fpp
@@ -45,6 +46,7 @@ brew install htop
 brew install yq
 brew install go
 brew install docker
+brew install direnv
 
 
 brew install eza
@@ -115,4 +117,13 @@ git config --global color.diff.commit     "yellow bold"
 git config --global color.diff.old        "red bold"
 git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
+
+#https://blog.gitbutler.com/how-git-core-devs-configure-git
+git config --global column.ui auto
+git config --global branch.sort -committerdate
+git config --global diff.algorithm histogram
+
 ### END
+
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
