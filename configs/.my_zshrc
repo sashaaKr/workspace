@@ -15,3 +15,7 @@ plugins=(
 alias ls="eza -la"
 alias cat="bat -P"
 alias start_colima="colima start -c 4 -m 8 -d 100"
+
+from_base_64() {
+  echo "$1" | base64 -d | jq
+}
