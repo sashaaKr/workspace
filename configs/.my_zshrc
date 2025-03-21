@@ -17,5 +17,25 @@ alias cat="bat -P"
 alias start_colima="colima start -c 4 -m 8 -d 100"
 
 from_base_64() {
-  echo "$1" | base64 -d | jq
+  if [[ -z "$1" ]]; then
+    echo "Error: No input provided" >&2
+    return 1
+  fi
+
+  if ! echo "$1" | base64 -d 2>/dev/null; then
+    echo "Error: Invalid base64 input" >&2
+    return 1
+  fi
+}
+
+from_base_64_json() {
+  if [[ -z "$1" ]]; then
+    echo "Error: No input provided" >&2
+    return 1
+  fi
+
+  if ! echo "$1" | base64 -d 2>/dev/null | jq '.'; then
+    echo "Error: Invalid base64 or JSON input" >&2
+    return 1
+  fi
 }
