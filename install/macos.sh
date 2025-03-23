@@ -69,6 +69,7 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install
 
 brew install gh	
+gh extension install dlvhdr/gh-dash
 
 
 #### starship
