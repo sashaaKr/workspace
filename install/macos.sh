@@ -127,7 +127,6 @@ git config --global column.ui auto
 git config --global branch.sort -committerdate
 git config --global diff.algorithm histogram
 
-### END
-
+echo 'alias commit_wip="git add . && git commit --amend --no-edit && ggpush --force-with-lease"' >> ~/.zshrc
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
