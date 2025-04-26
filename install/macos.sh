@@ -40,7 +40,6 @@ brew install pueue
 brew install lazydocker
 brew install lazygit
 brew install gitui
-brew install tmux
 brew install htop
 brew install yq
 brew install go
@@ -81,6 +80,10 @@ format = " [\$symbol\$context( \\\(\$namespace\\\))](\$style) "
 style = "bright-blue"
 disabled = false
 EOT
+
+## tmux installation
+brew install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
 brew install awscli
