@@ -52,7 +52,7 @@ brew install kubecolor
 echo 'alias kubectl="kubecolor"' >> ~/.zshrc
 
 brew install eza
-echo 'alias ls="eza -la"' >> ~/.zshrc
+echo 'alias ls="eza -la --icons=auto"' >> ~/.zshrc
 
 brew install bat
 echo 'alias cat="bat -P"' >> ~/.zshrc
