@@ -47,6 +47,7 @@ brew install docker
 brew install direnv
 brew install difft
 brew install neovim
+brew install git-who
 
 brew install kubecolor
 echo 'alias kubectl="kubecolor"' >> ~/.zshrc
