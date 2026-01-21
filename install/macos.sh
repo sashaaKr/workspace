@@ -4,9 +4,6 @@ source "$(dirname "$0")/git_setup.sh"
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "export LC_ALL=en_US.UTF-8" >> ~/.zshrc
-echo "export LANG=en_US.UTF-8" >> ~/.zshrc
-echo "export LANGUAGE=en_US.UTF-8" >> ~/.zshrc
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
@@ -15,7 +12,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install jq
 
 ### ranger install
 brew install ranger
@@ -32,31 +28,11 @@ echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
 # and select nerd font
 
 
-brew install iterm2
-brew install ripgrep
-brew install fx
-brew install fpp
 brew install pueue
-brew install lazydocker
-brew install lazygit
-brew install gitui
-brew install htop
-brew install yq
 brew install go
 brew install docker
-brew install direnv
 brew install difft
-brew install neovim
-brew install git-who
 
-brew install kubecolor
-echo 'alias kubectl="kubecolor"' >> ~/.zshrc
-
-brew install eza
-echo 'alias ls="eza -la --icons=auto"' >> ~/.zshrc
-
-brew install bat
-echo 'alias cat="bat -P"' >> ~/.zshrc
 
 brew install colima
 echo 'alias start_colima="colima start -c 4 -m 8 -d 100"' >> ~/.zshrc
@@ -68,37 +44,18 @@ echo '$(fnm env --use-on-cd --shell zsh)' >> ~/.zshrc
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 
-brew install gh	
 gh extension install dlvhdr/gh-dash
 
-
-#### starship
-brew install starship
-echo "eval "$(starship init zsh)"" >> ~/.zshrc
-cat <<EOT >> ~/.config/starship.toml
-[kubernetes]
-symbol = "⎈ "
-format = " [\$symbol\$context( \\\(\$namespace\\\))](\$style) "
-style = "bright-blue"
-disabled = false
-EOT
 
 ## tmux installation
 brew install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
-brew install awscli
 
-brew install kubectl 
 echo "source <(kubectl completion zsh)" >> ~/.zshrc
 
 
-brew install kubectx
-brew install k9s
-
-brew install pulumi
-brew install dive
 brew install redis
 
 
